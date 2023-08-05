@@ -42,12 +42,12 @@ export default function Intro() {
             </div>
         </div>
 
-        <motion.p className='mb-10 mt-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        <motion.h1 className='mb-10 mt-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
         initial={{opacity: 0, y:100}}
         animate={{opacity: 1, y:0}}>
             <span>Olá, meu nome é Marcos Vinicios. Estudante de Engenharia da Computação, </span>
             <span className='font-bold'>Jr. FullStack developer</span>  com <span className='font-bold'>~3 anos</span> de experiência. Gosto de construir sites e estou aprendendo <span className='font-bold'>Tailwind CSS</span>. Meu foco é <span className='underline'>React(Next.js).</span>
-        </motion.p>
+        </motion.h1>
 
         <motion.div className='flex flex-col sm:flex-row justify-center gap-2 px-4 text-lg font-medium'
         initial={{opacity: 0, y:100}}
