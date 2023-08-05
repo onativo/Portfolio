@@ -1,7 +1,11 @@
+import Intro from "@/components/intro";
+import SectionDivider from "@/components/section_divider";
+
 export default function Home() {
   return (
-    <main className="">
-      <h1 style={{textAlign: "center"}}>olá mundo</h1>
+    <main className="flex flex-col items-center px-4">
+      <Intro />
+      <SectionDivider />
     </main>
   )
 }
