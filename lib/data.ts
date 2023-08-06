@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import empty from "@/public/empty.png"
+import empty from "@/public/empty.png";
 
 export const links = [
   {
@@ -60,7 +60,7 @@ export const projectsData = [
   {
     title: "Loja Virtual",
     description:
-      "Pequena aplicação desenvolvida com React.Js que basicamente serve como uma loja virtual. Os dados são consultados através de uma API e dispostos na página inicial como produtos. O usuário pode ir adicionando produtos ao carrinho e no final verificar a sua compra. Também pode editar suas compras dentro do carrinho, aumentando ou diminuindo o número de itens.",
+      "Pequena SPA de loja virtual desenvolvida com React.Js. Os produtos são consultados através de uma API e dispostos na página inicial. O usuário pode adicionar produtos ao carrinho e no final verificar a sua compra. Também pode editar suas compras dentro do carrinho, aumentando ou diminuindo o número de itens.",
     tags: ["React", "Bootstrap"],
     imageUrl: empty,
   },
