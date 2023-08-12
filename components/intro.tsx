@@ -16,7 +16,7 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-36"
+      className="mb-24 max-w-[50rem] text-center sm:mb-0 scroll-mt-36"
       id="home"
     >
       <div className="flex items-center justify-center">
@@ -54,7 +54,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-10 px-4 font-medium text-[10px] !leading-[1.4] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -62,11 +62,11 @@ export default function Intro() {
           Olá, meu nome é Marcos Vinicios. Estudante de Engenharia da
           Computação,{" "}
         </span>
-        <span className="font-bold">Jr. FullStack developer</span> com{" "}
+        <span className="font-bold">Jr. DevOps </span> com{" "}
         <span className="font-bold">~3 anos</span> de experiência. Gosto de
-        construir sites e estou aprendendo{" "}
-        <span className="font-bold">Tailwind CSS</span>. Meu foco é{" "}
-        <span className="underline">React(Next.js).</span>
+        criar aplicações em nuvem e atuar em todas as etapas de desenvolvimento e deploy de um software.{" "}
+        No momento estou estudando pelo curso <span className="font-bold">IBM DevOps and Software Engineering.</span>. Meu foco é{" "}
+        <span className="underline">Amazon WebServices (AWS).</span>
       </motion.h1>
 
       <motion.div
