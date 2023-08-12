@@ -2,6 +2,24 @@ import React from "react";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import empty from "@/public/empty.png";
+import aws from "@/public/img/aws.svg"
+import bootstrap from "@/public/img/bootstrap.svg"
+import css3 from "@/public/img/css3.svg"
+import docker from "@/public/img/docker.svg"
+import git from "@/public/img/git.svg"
+import github from "@/public/img/github.svg"
+import html5 from "@/public/img/html5.svg"
+import javascript from "@/public/img/javascript.svg"
+import linux from "@/public/img/linux.svg"
+import mongodb from "@/public/img/mongodb.svg"
+import mysql from "@/public/img/mysql.svg"
+import nextjs from "@/public/img/nextjs.svg"
+import nodejs from "@/public/img/nodejs.svg"
+import python from "@/public/img/python.svg"
+import react from "@/public/img/react.svg"
+import tailwindcss from "@/public/img/tailwindcss.svg"
+import typescript from "@/public/img/typescript.svg"
+import vscode from "@/public/img/vscode.svg"
 
 export const links = [
   {
@@ -74,21 +92,76 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "GitHub",
-  "Amazon Web Services",
-  "Docker",
-  "Tailwind",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "MongoDB",
-  "Framer Motion",
+  {
+    title: "AWS",
+    imageUrl: aws
+  },
+  {
+    title: "Bootstrap",
+    imageUrl: bootstrap
+  },
+  {
+    title: "CSS3",
+    imageUrl: css3
+  },
+  {
+    title: "Docker",
+    imageUrl: docker
+  },
+  {
+    title: "Git",
+    imageUrl: git
+  },
+  {
+    title: "GitHub",
+    imageUrl: github
+  },
+  {
+    title: "HTML5",
+    imageUrl: html5
+  },
+  {
+    title: "JavaScript",
+    imageUrl: javascript
+  },
+  {
+    title: "Linux",
+    imageUrl: linux
+  },
+  {
+    title: "MongoDB",
+    imageUrl: mongodb
+  },
+  {
+    title: "MySQL",
+    imageUrl: mysql
+  },
+  {
+    title: "Next.Js",
+    imageUrl: nextjs
+  },
+  {
+    title: "Node.Js",
+    imageUrl: nodejs
+  },
+  {
+    title: "Python",
+    imageUrl: python
+  },
+  {
+    title: "React",
+    imageUrl: react
+  },
+  {
+    title: "TailWindCSS",
+    imageUrl: tailwindcss
+  },
+  {
+    title: "TypeScript",
+    imageUrl: typescript
+  },
+  {
+    title: "VsCode",
+    imageUrl: vscode
+  }
 ] as const;

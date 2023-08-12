@@ -19,7 +19,7 @@ export default function Projects() {
         delay: 0.35,
       }}
       id="projetos"
-      className="scroll-mt-[5.5rem] mt-5"
+      className="scroll-mt-[5.5rem] mt-5 mb-20"
     >
       <SectionHeading>Meus Projetos</SectionHeading>
       <div>
