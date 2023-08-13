@@ -23,7 +23,7 @@ export default function Skills() {
 
   return (
 
-    <motion.section className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
+    <motion.section className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 sm:w-85 overflow-hidden'
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
     ref={ref}

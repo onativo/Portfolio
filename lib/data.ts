@@ -1,6 +1,7 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { BiLogoAws } from "react-icons/bi";
+import { FaPeopleGroup } from "react-icons/fa6";
+
 import empty from "@/public/empty.png";
 import aws from "@/public/img/aws.svg"
 import bootstrap from "@/public/img/bootstrap.svg"
@@ -50,21 +51,21 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "CompassUOL",
-    location: "HomeOffice",
+    title: "Monitor do Curso CC-50",
+    location: "Remoto",
     description:
-      "Integrante do programa de bolsas CompassUOL em parceria com Amazon Web Services. Adiquiri habilidades e conquistei minha certificação AWS Certified Cloud Practitioner",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
+      "Um dos 100 selecionados para participar da monitoria do curso CC-50. Este curso é ofertado pela Universidade de Harvard e traduzido para português pela Fundação Estudar. Os monitores são responsáveis por tirar dúvidas e auxiliar os estudantes do curso durante seu aprendizado.",
+    icon: React.createElement(FaPeopleGroup),
+    date: "2023 - julho à dezembro",
   },
   {
-    title: "Full-Stack Developer",
-    location: "HOme",
+    title: "CompassUOL",
+    location: "Remoto",
     description:
-      "Desenvolvedor FullStack em perídodo de aprendizagem, desenvolvendo projetos próprios para construção de um portfólio. Estudando ingressar no mercado como freelancer ao mesmo tempo em que procuro uma vaga de estágio para desenvovler minhas habilidades no mundo profissional. Minha stack inclui: React, Next.js, TypeScript, Tailwind, Prisma, Pyhton, JavaScript, HTML, CSS e MongoDB.",
-    icon: React.createElement(FaReact),
-    date: "2021 - presente",
-  },
+      "Integrante do programa de bolsas CompassUOL em parceria com Amazon Web Services. Adiquiri habilidades e conquistei minha certificação AWS Certified Cloud Practitioner",
+    icon: React.createElement(BiLogoAws),
+    date: "2023 - fevereiro à julho",
+  }
 ] as const;
 
 export const projectsData = [
