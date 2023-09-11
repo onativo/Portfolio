@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
 import React from "react";
 import SectionHeading from "./section_heading";
 import { FaPaperPlane } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-
+import { sendEmail } from "@/actions/sendEmail";
 
 export default function Contact() {
-  const { ref } = useSectionInView({sectionName: "Contato"});
+  const { ref } = useSectionInView({ sectionName: "Contato" });
+
   return (
     <motion.section
       id="contato"
@@ -32,15 +33,34 @@ export default function Contact() {
         </a>{" "}
         ou pelo formulário abaixo.
       </p>
-      <form className="mt-10 flex flex-col">
+      <form
+        className="mt-10 flex flex-col"
+        action={async (formData) => {
+          await sendEmail(formData);
+        }}
+      >
         <input
           type="email"
+          name="senderEmail"
           placeholder="Seu E-mail"
-          className="h-14 rounded-lg border_black_10 px-4"
+          className="h-14 rounded-lg border_black_10 px-4 first-letter:uppercase"
+          required
+          maxLength={300}
+        />
+        <input
+          type="text"
+          name="senderName"
+          placeholder="Seu Nome"
+          className="h-14 mt-4 rounded-lg border_black_10 px-4 first-letter:uppercase"
+          required
+          maxLength={300}
         />
         <textarea
           placeholder="Mensagem"
-          className="h-52 my-3 rounded-lg border_black_10 p-4"
+          name="senderMessage"
+          className="h-52 my-3 rounded-lg border_black_10 p-4 first-letter:uppercase"
+          required
+          maxLength={3000}
         />
         <button
           type="submit"
