@@ -1,9 +1,10 @@
-import About from "@/components/about";
-import Experiences from "@/components/experiences";
 import Intro from "@/components/intro";
-import Projects from "@/components/projetcs";
 import SectionDivider from "@/components/section_divider";
+import About from "@/components/about";
+import Projects from "@/components/projetcs";
 import Skills from "@/components/skills";
+import Experiences from "@/components/experiences";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experiences />
+      <Contact />
     </main>
   );
 }

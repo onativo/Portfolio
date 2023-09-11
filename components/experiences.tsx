@@ -8,10 +8,19 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Experiences() {
+  const { ref } = useSectionInView({sectionName: "Experiência"});
+  
   return (
-    <section id="experiencia">
+    <motion.section
+      id="experiencia"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="mb-40 mt-5 scroll-mt-[5.5rem] sm:mb-50 sm:w-85"
+    >
       <SectionHeading>Minhas experiências</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -36,11 +45,13 @@ export default function Experiences() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-slate-700">{item.description}</p>
+              <p className="!mt-1 !font-normal text-slate-700">
+                {item.description}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 }

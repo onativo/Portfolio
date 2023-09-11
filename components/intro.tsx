@@ -9,14 +9,18 @@ import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active_section_context";
 
 export default function Intro() {
   const { ref } = useSectionInView({ sectionName: "Home" }, 0.6);
+ 
+  const { activeSection, setActiveSection, setTimeLastClick } =
+    useActiveSectionContext();
 
   return (
     <section
       ref={ref}
-      className="mb-24 max-w-[50rem] text-center sm:mb-0 scroll-mt-36"
+      className="mb-24 max-w-[50rem] text-center sm:mb-0 scroll-mt-28"
       id="home"
     >
       <div className="flex items-center justify-center">
@@ -54,7 +58,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-10 px-4 font-medium text-[10px] !leading-[1.4] sm:text-4xl"
+        className="mb-10 mt-10 px-4 font-normal text-[10px] !leading-[1.4] sm:text-3xl sm:px-0"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -64,9 +68,10 @@ export default function Intro() {
         </span>
         <span className="font-bold">Jr. DevOps </span> com{" "}
         <span className="font-bold">~3 anos</span> de experiência. Gosto de
-        criar aplicações em nuvem e atuar em todas as etapas de desenvolvimento e deploy de um software.{" "}
-        No momento estou estudando pelo curso <span className="font-bold">IBM DevOps and Software Engineering.</span>. Meu foco é{" "}
-        <span className="underline">Amazon WebServices (AWS).</span>
+        criar aplicações em nuvem e de atuar em todas as etapas de desenvolvimento
+        e deploy de um software. No momento estou estudando pelo curso{" "}
+        <span className="font-bold">IBM DevOps and Software Engineering</span>.
+        Meu foco é <span className="underline">Amazon WebServices (AWS).</span>
       </motion.h1>
 
       <motion.div
@@ -76,25 +81,29 @@ export default function Intro() {
         transition={{ delay: 0.2 }}
       >
         <Link
-          href="#contact"
+          href="#contato"
           className="group bg-slate-900 px-7 py-3 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-950 active:scale-105 transition-all"
+          onClick={() => {
+            setActiveSection("Contato");
+            setTimeLastClick(Date.now());
+          }}
         >
           Fale Comigo!{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition-all" />
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition-all hover:font-bold" />
         </Link>
         <a
           href="/meu_cv.pdf"
           download
-          className="group bg-white text-slate-950 px-7 py-3 rounded-full flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all border border-black/10 hover:border-black/40"
+          className="group bg-white text-slate-950 px-7 py-3 rounded-full flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all border_black_10 hover:border-black/40"
         >
           Baixar CV{" "}
-          <HiDownload className="opacity-70 group-hover:translate-y-1 transition-all" />
+          <HiDownload className="opacity-70 group-hover:translate-y-1 transition-all hover:font-bold" />
         </a>
 
         <a
           href="https://linkedin.com/in/onativo"
           target="_blank"
-          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.3rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border border-black/10 hover:border-black/40"
+          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.3rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border_black_10 hover:border-black/40 hover:font-bold"
         >
           <FaLinkedin />
         </a>
@@ -102,7 +111,7 @@ export default function Intro() {
         <a
           href="https://github.com/onativo"
           target="_blank"
-          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border border-black/10 hover:border-black/40"
+          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border_black_10 hover:border-black/40 hover:font-bold"
         >
           <FaGithubSquare />
         </a>

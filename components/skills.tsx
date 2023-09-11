@@ -23,13 +23,13 @@ export default function Skills() {
 
   return (
 
-    <motion.section className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 sm:w-85 overflow-hidden'
+    <motion.section className='mb-28 mt-5 max-w-[50rem] scroll-mt-[5.5rem] sm:mb-50 sm:w-85 m-auto text-center'
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
     ref={ref}
     id="skills">
         <SectionHeading>Minhas Skills</SectionHeading>
-        <ul className='flex flex-wrap justify-center gap-2'>
+        <ul className='flex flex-wrap justify-center gap-6'>
             {
                 skillsData.map((skill, index) => (
                     <motion.li key={index}
