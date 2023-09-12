@@ -20,7 +20,7 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className="mb-24 max-w-[50rem] text-center sm:mb-0 scroll-mt-28"
+      className="mb-24 mt-[5rem] lg:mt-[2rem] max-w-[50rem] text-center sm:mb-0 scroll-mt-28 sm:scroll-mt-16"
       id="home"
     >
       <div className="flex items-center justify-center">
@@ -58,14 +58,15 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-10 px-4 font-normal text-[10px] !leading-[1.4] sm:text-3xl sm:px-0"
+        className="mb-10 mt-10 px-2 font-medium lg:text-3xl md:text-3xl !leading-[1.4] sm:text-[18px]"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span>
-          Olá, meu nome é Marcos Vinicios. Estudante de Engenharia da
-          Computação,{" "}
+          Olá, mundo!{" "} <br/>
         </span>
+        <span>Meu nome é Marcos Vinicios. Estudante de Engenharia da
+          Computação,{" "}</span>
         <span className="font-bold">Jr. DevOps </span> com{" "}
         <span className="font-bold">~3 anos</span> de experiência. Gosto de
         criar aplicações em nuvem e de atuar em todas as etapas de desenvolvimento
@@ -75,7 +76,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row justify-center gap-4 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row sm:w-[70%] justify-center gap-4 px-4 text-lg font-medium m-auto button"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
