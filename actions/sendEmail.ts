@@ -1,6 +1,8 @@
 "use server";
 import { Resend } from "resend";
-import { validateString } from "@/lib/utils";
+import { validateString, getErrorMessage } from "@/lib/utils";
+import ContactForm from "@/email/contactForm";
+import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 export const sendEmail = async (formData: FormData) => {
@@ -26,17 +28,26 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+  let data;
   try {
     resend.emails.send({
       from: "Contato Portfolio <onboarding@resend.dev>",
       to: "onativo@outlook.com",
       subject: "Nova mensagem de contato",
-      text: `${senderName}\n${senderEmail}\n\n${senderMessage}`,
       reply_to: senderEmail as string,
+      react: React.createElement(ContactForm, {
+        senderMessage: senderMessage as string,
+        senderEmail: senderEmail as string,
+        senderName: senderName as string,
+      }),
     });
   } catch (error: unknown) {
     return {
-      error: error.message,
+      error: getErrorMessage(error),
     };
+  }
+
+  return {
+    data
   }
 };
