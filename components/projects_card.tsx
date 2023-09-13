@@ -29,8 +29,8 @@ export default function ProjectCard({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group sm:mb-8 last:mb-0"
     >
-      <section className="bg-slate-100 max-w-[42rem] border-black/[5] overflow-hidden sm:pr-8 relative sm:h-[25rem] mb-3 sm:mb-8 last-mb-0 even:pl-8 rounded-xl hover:bg-slate-200 transition-all group-even:pl-8 dark:bg-slate-600 dark:hover:bg-slate-500">
-        <div className="pt-4 pb-5 px-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
+      <section className="bg-slate-100 max-w-[42rem] border-black/[5] overflow-hidden sm:pr-8 relative sm:h-[25rem] mb-3 sm:mb-8 last-mb-0 even:pl-8 rounded-xl hover:bg-slate-200 transition-all sm:group-even:pl-8 dark:bg-slate-600 dark:hover:bg-slate-500">
+        <div className="pt-4 pb-5 px-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold dark:text-slate-200">
             {title}
           </h3>
@@ -50,7 +50,7 @@ export default function ProjectCard({
           src={imageUrl}
           alt="Project Image"
           quality={90}
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-xl shadow-2xl
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-xl shadow-2xl
         group-even:right-[initial]
         group-even:-left-40
         group-hover:-translate-x-3

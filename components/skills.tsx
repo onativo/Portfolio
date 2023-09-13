@@ -30,7 +30,7 @@ export default function Skills() {
       id="skills"
     >
       <SectionHeading>Minhas Skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-14">
+      <ul className="flex flex-wrap justify-center sm:gap-10 gap-4">
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
@@ -43,7 +43,7 @@ export default function Skills() {
             <Image
               src={skill.imageUrl}
               alt={skill.title}
-              className="w-[6rem] p-3 hover:scale-125 transition-all"
+              className="w-20 h-20 object-cover rounded hover:scale-125 transition-all p-2"
             />
           </motion.li>
         ))}
