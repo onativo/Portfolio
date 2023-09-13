@@ -29,15 +29,16 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "group flex w-full items-center justify-center px-3 py-3 transition hover:text-slate-950",
+                  "group flex w-full items-center justify-center px-3 py-3 transition ",
                   {
-                    "text-slate-100 font-bold hover:text-gray-100": activeSection === link.name,
+                    "text-slate-100 font-bold":
+                      activeSection === link.name,
                   }
                 )}
                 href={link.hash}
                 onClick={() => {
-                  setActiveSection(link.name)
-                  setTimeLastClick(Date.now())
+                  setActiveSection(link.name);
+                  setTimeLastClick(Date.now());
                 }}
               >
                 {link.name}
