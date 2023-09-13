@@ -5,6 +5,7 @@ import Projects from "@/components/projetcs";
 import Skills from "@/components/skills";
 import Experiences from "@/components/experiences";
 import Contact from "@/components/contact";
+import Badges from "@/components/badges";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
+      <Badges />
       <Experiences />
       <Contact />
     </main>

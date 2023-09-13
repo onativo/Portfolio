@@ -21,6 +21,7 @@ import react from "@/public/img/react.svg";
 import tailwindcss from "@/public/img/tailwindcss.svg";
 import typescript from "@/public/img/typescript.svg";
 import vscode from "@/public/img/vscode.svg";
+import cloud_practitioner from "@/public/img/cloud_practitioner.png"
 
 export const links = [
   {
@@ -38,6 +39,10 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Badges",
+    hash: "#badges",
   },
   {
     name: "Experiência",
@@ -168,3 +173,11 @@ export const skillsData = [
     imageUrl: vscode,
   },
 ] as const;
+
+export const badges = [
+  {
+    title: "AWS Certified Cloud Practitioner",
+    imageUrl: cloud_practitioner,
+    link: "https://www.credly.com/badges/07704469-746f-4445-a2bd-76336ac0a11e",
+  }
+]
