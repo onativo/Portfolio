@@ -1,26 +1,26 @@
 import React from "react";
-import { BiLogoAws } from "react-icons/bi";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { CiCompass1 } from "react-icons/ci";
 
 import empty from "@/public/empty.png";
-import aws from "@/public/img/aws.svg"
-import bootstrap from "@/public/img/bootstrap.svg"
-import css3 from "@/public/img/css3.svg"
-import docker from "@/public/img/docker.svg"
-import git from "@/public/img/git.svg"
-import github from "@/public/img/github.svg"
-import html5 from "@/public/img/html5.svg"
-import javascript from "@/public/img/javascript.svg"
-import linux from "@/public/img/linux.svg"
-import mongodb from "@/public/img/mongodb.svg"
-import mysql from "@/public/img/mysql.svg"
-import nextjs from "@/public/img/nextjs.svg"
-import nodejs from "@/public/img/nodejs.svg"
-import python from "@/public/img/python.svg"
-import react from "@/public/img/react.svg"
-import tailwindcss from "@/public/img/tailwindcss.svg"
-import typescript from "@/public/img/typescript.svg"
-import vscode from "@/public/img/vscode.svg"
+import aws from "@/public/img/aws.svg";
+import bootstrap from "@/public/img/bootstrap.svg";
+import css3 from "@/public/img/css3.svg";
+import docker from "@/public/img/docker.svg";
+import git from "@/public/img/git.svg";
+import github from "@/public/img/github.svg";
+import html5 from "@/public/img/html5.svg";
+import javascript from "@/public/img/javascript.svg";
+import linux from "@/public/img/linux.svg";
+import mongodb from "@/public/img/mongodb.svg";
+import mysql from "@/public/img/mysql.svg";
+import nextjs from "@/public/img/nextjs.svg";
+import nodejs from "@/public/img/nodejs.svg";
+import python from "@/public/img/python.svg";
+import react from "@/public/img/react.svg";
+import tailwindcss from "@/public/img/tailwindcss.svg";
+import typescript from "@/public/img/typescript.svg";
+import vscode from "@/public/img/vscode.svg";
 
 export const links = [
   {
@@ -51,21 +51,23 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Monitor do Curso CC-50",
+    title: "Monitor do Curso CS50 - Remoto",
     location: "Remoto",
+    posicao: "Voluntariado",
     description:
       "Um dos 100 selecionados para participar da monitoria do curso CC-50. Este curso é ofertado pela Universidade de Harvard e traduzido para português pela Fundação Estudar. Os monitores são responsáveis por tirar dúvidas e auxiliar os estudantes do curso durante seu aprendizado.",
     icon: React.createElement(FaPeopleGroup),
     date: "2023 - julho à dezembro",
   },
   {
-    title: "CompassUOL",
+    title: "CompassUOL - Remoto",
     location: "Remoto",
+    posicao: "Estagiário",
     description:
       "Integrante do programa de bolsas CompassUOL em parceria com Amazon Web Services. Adiquiri habilidades e conquistei minha certificação AWS Certified Cloud Practitioner",
-    icon: React.createElement(BiLogoAws),
+    icon: React.createElement(CiCompass1),
     date: "2023 - fevereiro à julho",
-  }
+  },
 ] as const;
 
 export const projectsData = [
@@ -95,74 +97,74 @@ export const projectsData = [
 export const skillsData = [
   {
     title: "AWS",
-    imageUrl: aws
+    imageUrl: aws,
   },
   {
     title: "Bootstrap",
-    imageUrl: bootstrap
+    imageUrl: bootstrap,
   },
   {
     title: "CSS3",
-    imageUrl: css3
+    imageUrl: css3,
   },
   {
     title: "Docker",
-    imageUrl: docker
+    imageUrl: docker,
   },
   {
     title: "Git",
-    imageUrl: git
+    imageUrl: git,
   },
   {
     title: "GitHub",
-    imageUrl: github
+    imageUrl: github,
   },
   {
     title: "HTML5",
-    imageUrl: html5
+    imageUrl: html5,
   },
   {
     title: "JavaScript",
-    imageUrl: javascript
+    imageUrl: javascript,
   },
   {
     title: "Linux",
-    imageUrl: linux
+    imageUrl: linux,
   },
   {
     title: "MongoDB",
-    imageUrl: mongodb
+    imageUrl: mongodb,
   },
   {
     title: "MySQL",
-    imageUrl: mysql
+    imageUrl: mysql,
   },
   {
     title: "Next.Js",
-    imageUrl: nextjs
+    imageUrl: nextjs,
   },
   {
     title: "Node.Js",
-    imageUrl: nodejs
+    imageUrl: nodejs,
   },
   {
     title: "Python",
-    imageUrl: python
+    imageUrl: python,
   },
   {
     title: "React",
-    imageUrl: react
+    imageUrl: react,
   },
   {
     title: "TailWindCSS",
-    imageUrl: tailwindcss
+    imageUrl: tailwindcss,
   },
   {
     title: "TypeScript",
-    imageUrl: typescript
+    imageUrl: typescript,
   },
   {
     title: "VsCode",
-    imageUrl: vscode
-  }
+    imageUrl: vscode,
+  },
 ] as const;

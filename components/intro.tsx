@@ -37,7 +37,7 @@ export default function Intro() {
               src={myself}
               alt="M Vinicios Nativo"
               priority={true}
-              className="w-28 h-28 object-cover border-[0.35rem] rounded-full border-white shadow-xl"
+              className="w-28 h-28 object-cover border-[0.35rem] rounded-full border-white shadow-xl dark:border-slate-700"
             />
           </motion.div>
 
@@ -83,7 +83,7 @@ export default function Intro() {
       >
         <Link
           href="#contato"
-          className="group bg-slate-900 px-7 py-3 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-950 active:scale-105 transition-all"
+          className="group bg-slate-900 px-7 py-3 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-950 hover:font-bold active:scale-105 transition-all dark:bg-slate-100 dark:text-slate-950"
           onClick={() => {
             setActiveSection("Contato");
             setTimeLastClick(Date.now());
