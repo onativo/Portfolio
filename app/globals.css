@@ -6,6 +6,10 @@ html {
   --line-color: #e5e7eb;
 }
 
+html.dark{
+  --line-color: #f5e7eb88;
+}
+
 .border_black_10 {
   @apply border border-black/10;
 }
