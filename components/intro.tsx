@@ -76,14 +76,14 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row justify-center gap-4 px-4 text-lg font-medium button m-auto text-center"
+        className="flex flex-col sm:flex-row justify-center gap-4 px-4 text-lg font-medium button text-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
         <Link
           href="#contato"
-          className="group bg-slate-900 px-7 py-3 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-950 hover:font-bold active:scale-105 transition-all dark:bg-slate-100 dark:text-slate-950 w-fit m-auto"
+          className="group bg-slate-900 px-7 py-3 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-950 hover:font-bold active:scale-105 transition-all dark:bg-slate-100 dark:text-slate-950 m-auto"
           onClick={() => {
             setActiveSection("Contato");
             setTimeLastClick(Date.now());
@@ -95,7 +95,7 @@ export default function Intro() {
         <a
           href="/meu_cv.pdf"
           download
-          className="group bg-white text-slate-950 px-7 py-3 rounded-full flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all border_black_10 hover:border-black/40 cursor-pointer w-fit m-auto"
+          className="group bg-white text-slate-950 px-7 py-3 rounded-full flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all border_black_10 hover:border-black/40 cursor-pointer m-auto"
         >
           Baixar CV{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition-all hover:font-bold" />
@@ -104,7 +104,7 @@ export default function Intro() {
         <a
           href="https://linkedin.com/in/onativo"
           target="_blank"
-          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.3rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border_black_10 hover:border-black/40 hover:font-bold w-[30%] m-auto justify-center"
+          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.3rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border_black_10 hover:border-black/40 hover:font-bold m-auto justify-center"
         >
           <FaLinkedin />
         </a>
@@ -112,7 +112,7 @@ export default function Intro() {
         <a
           href="https://github.com/onativo"
           target="_blank"
-          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border_black_10 hover:border-black/40 hover:font-bold w-[20%] m-auto justify-center"
+          className="bg-white text-slate-700 p-4 rounded-full flex items-center gap-2 text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 active:scale-105 transition-all border_black_10 hover:border-black/40 hover:font-bold m-auto justify-center"
         >
           <FaGithubSquare />
         </a>

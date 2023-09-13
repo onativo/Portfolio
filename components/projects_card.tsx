@@ -12,6 +12,7 @@ export default function ProjectCard({
   description,
   tags,
   imageUrl,
+  link
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -45,6 +46,9 @@ export default function ProjectCard({
               </li>
             ))}
           </ul>
+          <a href={link} target="_blank" className="mt-2 p-2 bg-blue-950 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full font-bold w-fit">
+            Repositório
+          </a>
         </div>
         <Image
           src={imageUrl}

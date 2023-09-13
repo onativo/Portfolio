@@ -82,13 +82,15 @@ export const projectsData = [
       "Projeto desenvolvido em React.Js, seu propósito é ser uma ferramenta para controle financeiro de projetos. O usuário pode inserir serviços a serem realizados, junto de seus respectivos orçamentos, e no final poderá conferir um resumo de todo o gasto envolvido.",
     tags: ["React", "Bootstrap"],
     imageUrl: empty,
+    link: "https://github.com/onativo/React-Projecta"
   },
   {
     title: "Loja Virtual",
     description:
-      "Pequena SPA de loja virtual desenvolvida com React.Js. Os produtos são consultados através de uma API e dispostos na página inicial. O usuário pode adicionar produtos ao carrinho e no final verificar a sua compra. Também pode editar suas compras dentro do carrinho, aumentando ou diminuindo o número de itens.",
+      "Pequena SPA de loja virtual desenvolvida com React.Js. Os produtos são consultados através de uma API e dispostos na página inicial. O usuário pode adicionar produtos ao carrinho e no final verificar a sua compra. Ainda, é possivel editar quantidade de itens no carrinho.",
     tags: ["React", "Bootstrap"],
     imageUrl: empty,
+    link: "https://github.com/onativo/Desafio-Season"
   },
   {
     title: "BlogApp",
@@ -96,6 +98,7 @@ export const projectsData = [
       "Um Blog simples desenvolvido em Node.JS, onde o usuário pode se cadastrar e criar ostagens ao famoso estilo blogger. As postagens são públicas e todos os outros usuários podem vê-las. Os dados das publicações são armazenados como documentos do MongoDB.",
     tags: ["React", "Node.js", "MongoDB"],
     imageUrl: empty,
+    link: "https://github.com/onativo/blogApp"
   },
 ] as const;
 
