@@ -22,6 +22,7 @@ import tailwindcss from "@/public/img/tailwindcss.svg";
 import typescript from "@/public/img/typescript.svg";
 import vscode from "@/public/img/vscode.svg";
 import cloud_practitioner from "@/public/img/cloud_practitioner.png"
+import ibm_devops from "@/public/img/imb-devops.png"
 
 export const links = [
   {
@@ -182,5 +183,10 @@ export const badges = [
     title: "AWS Certified Cloud Practitioner",
     imageUrl: cloud_practitioner,
     link: "https://www.credly.com/badges/07704469-746f-4445-a2bd-76336ac0a11e",
+  },
+  {
+    title: "IMB - DevOps Essentials",
+    imageUrl: ibm_devops,
+    link: "https://www.credly.com/badges/b4c1ba99-71c3-4e67-b2e6-497fef9552af",
   }
 ]

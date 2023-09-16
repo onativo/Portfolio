@@ -40,11 +40,11 @@ export default function Skills() {
             viewport={{ once: true }}
             custom={index}
           >
-            <a href={badge.link} target="_blank">
+            <a href={badge.link} target="_blank" className="">
               <Image
                 src={badge.imageUrl}
                 alt={badge.title}
-                className="w-60 h-60 object-cover rounded hover:scale-125 transition-all p-2"
+                className="w-60 h-60 rounded transition-all p-2 skill-logo"
               />
             </a>
           </motion.li>

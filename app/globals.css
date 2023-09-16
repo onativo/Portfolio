@@ -13,27 +13,12 @@ html.dark{
 .border_black_10 {
   @apply border border-black/10;
 }
-
-
-/* @media (max-width: 640px){
-  .button{
-    display:flex;
-    margin: 0 auto;
-    width: 300px;
-    text-align: center;
-  }
-  .button a{
-    justify-content: center;
-  }
-} */
-/* @media (min-width: 821px){
-  .button{
-    display:flex;
-    margin: 0 auto;
-    width: 300px;
-    text-align: center;
-  }
-  .button a{
-    justify-content: center;
-  }
-} */
+.skill-logo{
+  filter: grayscale();
+  opacity: 0.4;
+  transition: filter 0.3s, opacity 0.3s;
+}
+.skill-logo:hover{
+  filter: none;
+  opacity: 1;
+}
