@@ -46,14 +46,14 @@ export default function About() {
         procurando por algo relacionado a desenvolvimento, seja web, frontend ou
         backend e/ou Python.{" "}
         <span className="font-medium">Mas já adianto </span>que sou flexível e
-        posso me adaptar a qualquer desafio que seja proposto.
+        posso me adaptar a qualquer desafio proposto.
       </p>
 
       <p>
         <span className="italic">Quando não estou codando</span>, eu gosto de
         correr 🏃, cuidar de plantas 🪴 e cozinhar 👨‍🍳. Sou pai de três filhos{" "}
-        <span className="font-medium">gatos</span> 🐱 e no momento estou
-        estudando sobre TypeScript e a certificação AWS Certified Developer.
+        <span className="font-medium">gatos</span> 🐱. Ainda, estou
+        estudando sobre TypeScript como hobby e meu próximo objetivo é conquistar a certificação AWS Certified Developer.
         Também dedico algumas horinhas semanais a aprender a tocar{" "}
         <span className="font-medium">guitarra 🎸</span>.
       </p>
