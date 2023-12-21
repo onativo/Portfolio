@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPeopleGroup } from "react-icons/fa6";
+import { FaAws } from "react-icons/fa";
 import { CiCompass1 } from "react-icons/ci";
 
 import empty from "@/public/empty.png";
@@ -57,13 +57,13 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Monitor do Curso CS50 - Remoto",
+    title: "Blu",
     location: "Remoto",
-    posicao: "Voluntariado",
+    posicao: "Estagiário de Cloud",
     description:
-      "Um dos 100 selecionados para participar da monitoria do curso CC-50. Este curso é ofertado pela Universidade de Harvard e traduzido para português pela Fundação Estudar. Os monitores são responsáveis por tirar dúvidas e auxiliar os estudantes do curso durante seu aprendizado.",
-    icon: React.createElement(FaPeopleGroup),
-    date: "2023 - julho à dezembro",
+      "Estagiário do time de Cloud, atuando na manutenção dos ambientes de desenvolvimento e produção. Criação de recursos em nuvem AWS como máquinas virtuais, funções serverless, políticas de usuário e chaves secretas. Suporte nas ferramenteas Harness e Rancher para manutenção de infraestrutura de CI/CD.",
+    icon: React.createElement(FaAws),
+    date: "setembro/23 - atual",
   },
   {
     title: "CompassUOL - Remoto",

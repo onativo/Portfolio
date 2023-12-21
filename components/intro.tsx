@@ -70,8 +70,8 @@ export default function Intro() {
         <span className="font-bold">Jr. DevOps </span> com{" "}
         <span className="font-bold">~3 anos</span> de experiência. Gosto de
         criar aplicações em nuvem e de atuar em todas as etapas de desenvolvimento
-        e deploy de um software. No momento estou estudando pelo curso{" "}
-        <span className="font-bold">IBM DevOps and Software Engineering</span>.
+        e deploy de um software. Hoje, trabalho como estagiário do time de Cloud{" "}
+        <span className="font-bold"><a style={{ color: "black", textDecoration: "none" }} href="https://blu.com.br/" target="_blank">Blu</a></span>.
         Meu foco é <span className="underline">Amazon WebServices (AWS).</span>
       </motion.h1>
 
